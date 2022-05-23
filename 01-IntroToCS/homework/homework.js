@@ -16,6 +16,14 @@ function BinarioADecimal(num) {
 function DecimalABinario(num) {
   // tu codigo aca
 
+
+    var binario = [];
+    while (num > 0){
+        binario.unshift(num % 2);
+        num = Math.floor(num / 2);
+    }
+    return binario.join("");
+
 }
 
 
