@@ -11,7 +11,7 @@ const {
     BinarySearchTree
 } = require('../DS.js')
 
-describe('countArray', () => {
+xdescribe('countArray', () => {
     it("debe determinar la suma de todos los números contenidos en el array.", () => {
         expect(countArray([1,1,1,1,1,1,1,1,1,1])).toBe(10)
     })
@@ -23,7 +23,7 @@ describe('countArray', () => {
     })
 })
 
-describe('countProps', () => {
+xdescribe('countProps', () => {
     it('debe determinar la cantidad correcta de propiedades de un objeto', () => {
         const objeto = {
             a: 1,
@@ -48,7 +48,7 @@ describe('countProps', () => {
     })
 })
 
-describe('changeNotNumbers', () =>{
+xdescribe('changeNotNumbers', () =>{
     it('deberá cambiar aquellos valores que no puedan castearse(convertirse) a numeros por `Kiricocho` y devolver la cantidad de cambios que hizo', () => {
         let listOne = new LinkedList();
         listOne.add(1);
@@ -83,7 +83,7 @@ describe('changeNotNumbers', () =>{
     })
 })
 
-describe('mergeQueues', () => {
+xdescribe('mergeQueues', () => {
     it('a partir de dos queues recibidas por parametro debe devolver una nueva Queue que vaya mergeando los nodos de las anteriores.', () => {
         var queueOne = new Queue();
         queueOne.enqueue(1);
@@ -134,7 +134,7 @@ describe('mergeQueues', () => {
     })
 })
 
-describe('closureMult', () => {
+xdescribe('closureMult', () => {
     it('debe generar nuevas funciones que representen las tablas de multiplicacion de dinstintos numeros, como la tabla del 4.', () => {
         let multByFour = closureMult(4);
         expect(multByFour(2)).toBe(8);
@@ -153,7 +153,7 @@ describe('closureMult', () => {
 })
 
 describe('Sum', () => {
-    it('el método sum dentro del prototype de BinarySearchTree que debe retornar la suma total de los valores dentro de cada nodo del arbol', () => {
+    xit('el método sum dentro del prototype de BinarySearchTree que debe retornar la suma total de los valores dentro de cada nodo del arbol', () => {
         var bst = new BinarySearchTree(15);
         bst.insert(10);
         bst.insert(17);

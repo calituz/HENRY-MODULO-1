@@ -67,6 +67,30 @@ Pueden utilizar class o función constructora.
   }
 
 
+  var Pepe = new Queue()
+console.log(Pepe);
+Pepe.enqueue("d")
+console.log(Pepe);
+Pepe.dequeue();
+console.log(Pepe);
+Pepe.size();
+console.log(Pepe);
+
+function Queue() {      
+  this.array = [];
+}
+
+Queue.prototype.enqueue = function(item) {
+  this.array.push(item)
+}                                             
+
+Queue.prototype.dequeue = function() {      
+}
+
+Queue.prototype.size = function() {
+    return this.array.length
+  }
+
 // No modifiquen nada debajo de esta linea
 // --------------------------------
 
